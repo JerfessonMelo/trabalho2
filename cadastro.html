@@ -18,6 +18,7 @@
     </nav>
     <main>
         <h2>Formulário De Cadastro</h2>
+        <fieldset>
         <h3>Dados Pessoais</h3>
         <form action="cadastraCliente.php" method="post">
 
@@ -53,7 +54,7 @@
             <input type="radio" id="casado" name="estadoCivil" value="C">Casado<br>
             <input type="radio" id="divorciado" name="estadoCivil" value="D">Divorciado<br>
             <input type="radio" id="viuvo" name="estadoCivil" value="V">Viuvo<br>
-
+            
             <h3>Endereço</h3>
 
             <label for="cep">CEP:</label>
@@ -79,7 +80,6 @@
 
             <label for="Estado">Estado:</label>
             <input type="estado" id="estado" name="estado" required><br><br>
-
             <button>Finalizar Cadastro</button>
         </from>
         <h3>Informações Adicionais</h3>
@@ -93,6 +93,7 @@
             <textarea>Conte Sua História</textarea><br>
 
             <input type="file" multiple accept="image/*">
+        </fieldset>    
     </main>
 </body>
 </html>
