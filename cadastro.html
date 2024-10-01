@@ -19,7 +19,7 @@
     <main>
         <h2>Formulário De Cadastro</h2>
         <fieldset>
-        <h3>Dados Pessoais</h3>
+            <legend>Dados Pessoais</legend> 
         <form action="cadastraCliente.php" method="post">
 
             <input type="hidden" name="original" value="web"><br>
@@ -57,8 +57,9 @@
                 <option value="divorciado">Divorciado</option>
                 <option value="viuvo">Viuvo</option>
             </select>
-
-            <h3>Endereço</h3>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
 
             <label for="cep">CEP:</label>
             <input type="text" id="cep" name="cep" placeholder="00000-000" required><br>
@@ -83,9 +84,9 @@
 
             <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" required><br><br>
-            <button>Finalizar Cadastro</button>
-        </form>
-        <h3>Informações Adicionais</h3>
+        </fieldset>
+        <fieldset>
+            <legend>Informações Adicionais</legend>
 
             <input type="checkbox" id="filmes" name="filmes" value="filmes">
             <label for="filmes">Filme</label><br>
@@ -104,11 +105,13 @@
 
             <input type="checkbox" id="esportes" name="esportes" value="esportes">
             <label for="esportes">Esportes</label><br><br>
-           
+          
             <textarea placeholder="Conte Sua História" >Conte Sua História</textarea><br>
 
-            <input type="file" multiple accept="image/*">
-        </fieldset>    
+            <input type="file" multiple accept="image/*"> 
+            </fieldset>
+            <button>Finalizar Cadastro</button>
+        </form>   
     </main>
 </body>
 </html>
